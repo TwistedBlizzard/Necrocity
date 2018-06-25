@@ -1,0 +1,91 @@
+{
+  "combat": {
+    "light_melee": {
+      "str": 2,
+      "wil": 3,
+      "dex": 5
+    },
+    "heavy_melee": {
+      "str": 7,
+      "con": 3
+    },
+    "marksmanship": {
+      "int": 2,
+      "per": 4,
+      "dex": 4
+    },
+    "shield": {
+      "con": 6,
+      "def": 4
+    },
+    "dodge": {
+      "con": 3,
+      "dex": 7
+    },
+    "flex": {
+      "dex": 2,
+      "int": 2,
+      "wis": 1,
+      "wil": 1,
+      "luck": 4
+    }
+  },
+  "social": {
+    "haggling": {
+      "cha": 7,
+      "luck": 3
+    },
+    "persuasion": {
+      "int": 3,
+      "cha": 6,
+      "wis": 1
+    },
+    "intimidation": {
+      "str": 3,
+      "con": 1,
+      "int": 3,
+      "wis": 3
+    },
+    "charm": {
+      "int": 3,
+      "cha": 6,
+      "luck": 1
+    },
+    "insight": {
+      "int": 4,
+      "wis": 4,
+      "per": 2
+    }
+  },
+  "survival": {
+    "scavenging": {
+      "per": 5,
+      "int": 2,
+      "luck": 3
+    },
+    "sleight_of_hand": {
+      "dex": 7,
+      "wil": 3
+    },
+    "resistance": {
+      "con": 8,
+      "wil": 1,
+      "luck": 1
+    },
+    "cooking": {
+      "wis": 6,
+      "dex": 4
+    },
+    "hauling": {
+      "str": 5,
+      "con": 2,
+      "wil": 3
+    },
+    "stamina": {
+      "con": 4,
+      "def": 1,
+      "wil": 2,
+      "str": 3
+    }
+  }
+}
