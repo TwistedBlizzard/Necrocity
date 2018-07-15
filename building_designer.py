@@ -33,6 +33,7 @@ class Application(Frame):
         self.material = StringVar()
         self.material.set('O')
         self.create_widgets()
+        
     def create_widgets(self):
         top_bar = Frame(self)
         top_bar.pack(side='top')
@@ -61,6 +62,7 @@ class Application(Frame):
         level_down_button = Button(navigation, text='Level Down', command=self.level_down)
         level_down_button.grid(column=3, row=2)
         self.build_main_view()
+
     def build_main_view(self):
         self.main_view = Frame(self)
         self.main_view.pack(side='bottom')
@@ -68,9 +70,11 @@ class Application(Frame):
             for y in range(10):
                 button = Button(self.main_view, textvariable=self.view[x][y], command=lambda x=x, y=y: self.set(x, y))
                 button.grid(column=x, row=y)
+
     def set(self, x, y):
         self.building[self.level][x+self.x][y+self.y] = self.material.get()
         self.update()
+
     def view_right(self):
         self.x += 5
         height = len(self.building['0'][0])
@@ -83,10 +87,12 @@ class Application(Frame):
                     grid.append(col)
             self.max_x = self.x
         self.update()
+
     def view_left(self):
         if self.x != 0:
             self.x -= 5
             self.update()
+
     def view_down(self):
         self.y += 5
         if self.y > self.max_y:
@@ -96,10 +102,12 @@ class Application(Frame):
                         col.append('X')
             self.max_y = self.y
         self.update()
+
     def view_up(self):
         if self.y != 0:
             self.y -= 5
             self.update()
+
     def level_up(self):
         width = len(self.building[self.level])
         height = len(self.building[self.level][0])
@@ -116,6 +124,7 @@ class Application(Frame):
                 grid.append(col)
             self.building[self.level] = grid
         self.update()
+
     def level_down(self):
         width = len(self.building[self.level])
         height = len(self.building[self.level][0])
@@ -132,11 +141,13 @@ class Application(Frame):
                 grid.append(col)
             self.building[self.level] = grid
         self.update()
+
     def update(self):
         for x in range(10):
             for y in range(10):
                 text = self.building[self.level][x+self.x][y+self.y]
                 self.view[x][y].set(text)
+
     def invert_grid(self, building):
         temp_building = {}
         for level, grid in building.items():
@@ -150,6 +161,7 @@ class Application(Frame):
                 temp_grid.append(temp_col)
             temp_building[level] = temp_grid
         return temp_building
+
     def save(self):
         ## TODO: Make json files less 'stringy'
         if self.name == 'untitled':
@@ -171,6 +183,7 @@ class Application(Frame):
             data['name'] = self.name
             data['building'] = self.building
             json.dump(data, json_file, indent=4)
+
     def load(self):
         path = input('Enter Path: ')
         with open(path, 'r') as json_file:
