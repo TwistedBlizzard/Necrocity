@@ -10,7 +10,6 @@ class human:
         self.stats = self.generate_stats()
         self.skills = self.generate_skills()
         self.unique_id = self.generate_id()
-        # self.personality = self.generate_personality()
         self.save()
         print(self.name, self.stats, self.skills)
     def generate_name(self):
@@ -47,10 +46,6 @@ class human:
                     char_skills[category][skill] += self.stats[stat]*weight
 
         return char_skills
-    def generate_personality(self):
-        personality = {}
-        categories = []
-        return personality
     def generate_id(self):
         try:
             os.makedirs('humans')
