@@ -1,7 +1,7 @@
 import os, json
 
 for file in os.listdir('buildings'):
-    path = os.path.join('buildings', file)
+    path = os.path.join('res', 'buildings', file)
     with open(path, 'r') as json_file:
         data = json.load(json_file)
         try:

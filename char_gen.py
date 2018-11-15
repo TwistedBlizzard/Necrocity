@@ -95,23 +95,26 @@ def populate_names():
     for name in get_data(url):
         female_names.append(name['name'])
         last_names.append(name['surname'])
+    path = os.path.join('res', 'male_names.json')
     try:
-        os.remove('male_names.json')
+        os.remove(path)
     except OSError:
         pass
-    with open('male_names.json', 'w') as json_file:
+    with open(path, 'w') as json_file:
         json.dump(male_names, json_file)
+    path = os.path.join('res', 'female_names.json')
     try:
-        os.remove('female_names.json')
+        os.remove(path)
     except OSError:
         pass
-    with open('female_names.json', 'w') as json_file:
+    with open(path, 'w') as json_file:
         json.dump(female_names, json_file)
+    path = os.path.join('res', 'last_names.json')
     try:
-        os.remove('last_names.json')
+        os.remove(path)
     except OSError:
         pass
-    with open('last_names.json', 'w') as json_file:
+    with open(path, 'w') as json_file:
         json.dump(last_names, json_file)
 def get_data(url):
     response = urlopen(url)

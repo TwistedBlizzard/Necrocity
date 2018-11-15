@@ -1,6 +1,7 @@
 from tkinter import Tk, Frame, Label, Button, Entry, StringVar
 import os, json
 
+
 class Application(Frame):
     def __init__(self, master):
         super().__init__(master)
@@ -33,7 +34,7 @@ class Application(Frame):
         self.material = StringVar()
         self.material.set('O')
         self.create_widgets()
-        
+
     def create_widgets(self):
         top_bar = Frame(self)
         top_bar.pack(side='top')
@@ -168,12 +169,12 @@ class Application(Frame):
             x = 1
             while True:
                 temp_name = self.name + '_' + str(x)
-                if os.path.isfile(os.path.join('buildings', temp_name + '.json')):
+                if os.path.isfile(os.path.join('res', 'buildings', temp_name + '.json')):
                     x += 1
                 else:
                     self.name = temp_name
                     break
-        path = os.path.join('buildings', self.name + '.json')
+        path = os.path.join('res', 'buildings', self.name + '.json')
         try:
             os.remove(path)
         except OSError:
