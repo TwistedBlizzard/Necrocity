@@ -89,9 +89,7 @@
     "Love": [
         "Family",
         "Relationships",
-        "Hope",
-        "Family",
-        "Relationships"
+        "Hope"
     ],
     "Family": [
         "Hope",
@@ -216,7 +214,6 @@
     "Danger": [
         "Theft",
         "Infected",
-        "War",
         "Night",
         "Raiders",
         "The Unknown"
@@ -256,13 +253,14 @@
     "Theft": [
         "Loss",
         "Raiders",
-        "Supplies"
+        "Resources"
     ],
     "The Unknown": [
         "Danger",
         "Infected",
         "Space",
         "Exploration",
+        "Infinity"
         "Research"
     ],
     "Creation": [
@@ -291,7 +289,7 @@
     ],
     "Travel": [
         "The Unknown",
-        "Supplies"
+        "Resources"
     ],
     "Combat": [
         "Danger",
@@ -318,7 +316,7 @@
         "Art",
         "Defense"
     ],
-    "Supplies": [
+    "Resources": [
         "Food",
         "Safety",
         "Theft",
