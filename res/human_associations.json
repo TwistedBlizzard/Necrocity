@@ -1,48 +1,89 @@
 {
-  "Star":[
-    "Space",
-    "Space",
-    "Space",
-    "Hope",
-    "Night",
-    "Night",
-    "Moon"
-  ],
-  "Space":[
-    "Star",
-    "Moon",
-    "Spacecraft",
-    "Galaxies",
-    "Aliens",
-    "Infinity",
-    "Conspiracies",
-    "Science"
-  ],
-  "Hope":[
-    "Love",
-    "Family",
-    "Music",
-    "Art"
-  ],
-  "Night":[
-    "Star",
-    "Moon",
-    "Infected",
-    "Day"
-  ],
-  "Moon":[
-    "Star",
-    "Spacecraft",
-    "Aliens",
-    "Conspiracies",
-    "Space"
-  ],
-  "Religion":[
-    "God",
-    "War",
-    "Love",
-    "Peace",
-    "Spirituality",
-    "Family"
-  ]
+    "Star": [
+        "Space",
+        "Space",
+        "Space",
+        "Hope",
+        "Night",
+        "Night",
+        "Moon"
+    ],
+    "Space": [
+        "Star",
+        "Moon",
+        "Spacecraft",
+        "Galaxies",
+        "Aliens",
+        "Infinity",
+        "Conspiracies",
+        "Science"
+    ],
+    "Hope": [
+        "Love",
+        "Family",
+        "Music",
+        "Art"
+    ],
+    "Night": [
+        "Star",
+        "Moon",
+        "Infected",
+        "Day"
+    ],
+    "Moon": [
+        "Star",
+        "Spacecraft",
+        "Aliens",
+        "Conspiracies",
+        "Space"
+    ],
+    "Religion": [
+        "God",
+        "War",
+        "Love",
+        "Peace",
+        "Spirituality",
+        "Family"
+    ],
+    "Spacecraft": [
+        "Space",
+        "Space",
+        "Science",
+        "Science",
+        "Salvage",
+        "Moon",
+        "Star"
+    ],
+    "Galaxies": [
+        "Space",
+        "Space",
+        "Science",
+        "Star"
+    ],
+    "Aliens": [
+        "Space",
+        "Science",
+        "Technology"
+    ],
+    "Infinity": [
+        "Space",
+        "Science"
+    ],
+    "Conspiracies": [
+        "Aliens",
+        "Moon",
+        "Space"
+    ],
+    "Science": [
+        "Space",
+        "Hope",
+        "Technology"
+    ],
+    "Love": [
+        "Family",
+        "Relationships",
+        "Hope",
+        "Family",
+        "Relationships"
+    ]
 }
