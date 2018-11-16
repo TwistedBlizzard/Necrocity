@@ -2,39 +2,6 @@ import random, json, os
 from urllib.request import urlopen
 from decimal import Decimal as dec
 
-    class ConversationTools:
-        def __init__(self, associations=None, race=None):
-            partners = []
-            self.wants_to_converse = True
-            self.topics = []
-            self.situation = []
-            if associations != None:
-                try:
-                    for root in associations:
-                        for association in associations[root]:
-                            break
-                        break
-                except TypeError:
-                    raise TypeError('Associations were parsed in the wrong format.')
-                self.associations = associations
-            elif race == None:
-                raise ValueError('If no associations are provided, a race type must be given.')
-            elif race == 'Human':
-                path = os.path.join('res', 'human_associations.json')
-                with open(path, 'r') as json_file:
-                    self.associations = json.load(json_file)
-            else:
-                raise ValueError(race + ' is not a valid race type.')
-        def add_association(self, root, association):
-            if root not in self.associations:
-                self.associations[root] = []
-            self.associations[root].append(association)
-            if association not in self.associations:
-                self.associations[association] = []
-            self.associations[association] += [root, root]
-            self.associations[association] += self.current_topics()
-            
-
 class Human:
     def __init__(self):
         # Here we do all of the character generation.
