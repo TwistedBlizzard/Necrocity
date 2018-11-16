@@ -57,31 +57,30 @@ class ConversationTools:
 
 class Conversation:
     def __init__(self, participants):
-        self.topic = None
         self.participants = participants
+        self.speaker = None
+        self.listeners = []
+        self.topic = None
         self.recent_topics = []
-        self.current_speaker = None
     def start_conversation(self):
         pool = []
         for participant in self.participants:
             if participant.wants_to_converse:
                 for i in range(participant.social):
                     pool.append(participant)
-        ice_breaker = rand.choice(pool)
-        self.current_speaker = ice_breaker
-        self.topic = ice_breaker.get_topic(self.participants)
+        speaker = rand.choice(pool)
+        topic = speaker.get_topic(self.participants)
+        self.set_topic(speaker, topic)
     def get_next_speaker(self):
         participants = []
-        for participant in self.participants:
-            if participant == self.current_speaker:
-                continue
-            elif participant.wants_to_converse:
-                print('  %s wants to talk.' % (participant.name))
-                if self.topic in participant.associations:
-                    print('  %s knows about %s.' % (participant.name, self.topic))
-                    participants += [participant] * participant.social
+        for listener in self.listeners:
+            if listener.wants_to_converse:
+                print('  %s wants to talk.' % (listener.name))
+                if self.topic in listener.associations:
+                    print('  %s knows about %s.' % (listener.name, self.topic))
+                    participants += [listener] * listener.social
         if len(participants) < 1:
-            print('The conversation has died down.')
+            print('The conversation has died down...')
             time.sleep(3)
             next_speaker = rand.choice(self.participants)
         else:
@@ -90,14 +89,21 @@ class Conversation:
     def converse(self):
         self.start_conversation()
         while True:
-            print('%s starts talking about %s.' % (self.current_speaker.name, self.topic))
+            print('%s starts talking about %s.' % (self.speaker.name, self.topic))
+            for listener in self.participants:
+                listener.add_association(self.speaker.name, self.topic)
             wait_time = 5
             wait_time += rand.randrange(-3, 4)
             wait_time /= 2
             time.sleep(wait_time)
-            print(self.current_speaker.name, 'stopped talking.')
-            self.current_speaker = self.get_next_speaker()
-            self.topic = self.current_speaker.get_association(self.topic)
+            print(self.speaker.name, 'stopped talking.')
+            next_speaker = self.get_next_speaker()
+            next_topic = next_speaker.get_association(self.topic)
+            self.set_topic(next_speaker, next_topic)
+    def set_topic(self, speaker, topic):
+        self.speaker = speaker
+        self.topic = topic
+        self.listeners = self.participants - speaker
 
 if __name__ == '__main__':
     barry = ConversationTools('Barry', race='Human')
