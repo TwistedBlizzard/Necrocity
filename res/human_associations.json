@@ -22,20 +22,25 @@
         "Love",
         "Family",
         "Music",
-        "Art"
+        "Art",
+        "Research",
+        "Travel"
     ],
     "Night": [
         "Star",
         "Moon",
         "Infected",
-        "Day"
+        "Day",
+        "The Unknown",
+        "Rest"
     ],
     "Moon": [
         "Star",
         "Spacecraft",
         "Aliens",
         "Conspiracies",
-        "Space"
+        "Space",
+        "Night"
     ],
     "Religion": [
         "God",
@@ -77,7 +82,9 @@
     "Science": [
         "Space",
         "Hope",
-        "Technology"
+        "Technology",
+        "Research",
+        "Knowledge"
     ],
     "Love": [
         "Family",
@@ -96,23 +103,30 @@
         "Inspiration",
         "Entertainment",
         "Shelter",
-        "Safety"
+        "Safety",
+        "Love",
+        "Creation"
     ],
     "Art": [
         "Dreams",
         "Hope",
-        "Inspiration"
+        "Inspiration",
+        "Creation",
+        "Crafts"
     ],
     "Infected": [
         "Death",
         "Loss",
-        "Danger"
+        "Danger",
+        "Combat",
+        "Defense"
     ],
     "Day": [
         "Safety",
         "Exploration",
         "Light",
-        "Peace"
+        "Peace",
+        "Travel"
     ],
     "God": [
         "Hope",
@@ -122,18 +136,21 @@
     "War": [
         "Death",
         "Loss",
-        "Heroism"
+        "Heroism",
+        "Combat"
     ],
     "Peace": [
         "Safety",
         "Family",
-        "Hope"
+        "Hope",
+        "Rest"
     ],
     "Spirituality": [
         "Hope",
         "Light",
         "Safety",
-        "Infinity"
+        "Infinity",
+        "Rest"
     ],
     "Salvage": [
         "Technology",
@@ -149,7 +166,9 @@
     "Relationships": [
         "Love",
         "Loss",
-        "Family"
+        "Family",
+        "Friendship",
+        "Protection"
     ],
     "Loss": [
         "Death",
@@ -166,24 +185,28 @@
     "Entertainment": [
         "Shelter",
         "Safety",
-        "Peace"
+        "Peace",
+        "Music"
     ],
     "Shelter": [
         "Safety",
         "Night",
-        "Peace"
+        "Peace",
+        "Rest"
     ],
     "Safety": [
         "Hope",
         "Shelter",
-        "Friendship"
+        "Friendship",
+        "Rest"
     ],
     "Dreams": [
         "Night",
         "Star",
         "Loss",
         "Relationships",
-        "Hope"
+        "Hope",
+        "Rest"
     ],
     "Death": [
         "Danger",
@@ -246,7 +269,8 @@
         "Crafts",
         "Inspiration",
         "Hope",
-        "Technology"
+        "Technology",
+        "Art"
     ],
     "Friendship": [
         "Relationships",
@@ -256,12 +280,14 @@
     "Raiders": [
         "Theft",
         "Combat",
-        "Weapons"
+        "Weapons",
+        "Defense"
     ],
     "Research": [
         "Technology",
         "Science",
-        "Hope"
+        "Hope",
+        "Infinity"
     ],
     "Travel": [
         "The Unknown",
@@ -289,7 +315,8 @@
         "Death",
         "Combat",
         "War",
-        "Art"
+        "Art",
+        "Defense"
     ],
     "Supplies": [
         "Food",
@@ -301,5 +328,19 @@
     "Food": [
         "Hope",
         "Shelter"
+    ],
+    "Rest": [
+        "Health",
+        "Night",
+        "Shelter"
+    ],
+    "Health": [
+        "Damage",
+        "Death",
+        "Protection",
+        "Resources"
+    ],
+    "Damage": [
+        "Combat"
     ]
 }
