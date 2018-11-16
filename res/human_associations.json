@@ -260,7 +260,7 @@
         "Infected",
         "Space",
         "Exploration",
-        "Infinity"
+        "Infinity",
         "Research"
     ],
     "Creation": [
@@ -284,8 +284,7 @@
     "Research": [
         "Technology",
         "Science",
-        "Hope",
-        "Infinity"
+        "Hope"
     ],
     "Travel": [
         "The Unknown",
