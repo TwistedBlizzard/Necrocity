@@ -85,5 +85,221 @@
         "Hope",
         "Family",
         "Relationships"
+    ],
+    "Family": [
+        "Hope",
+        "Relationships",
+        "Love",
+        "Loss"
+    ],
+    "Music": [
+        "Inspiration",
+        "Entertainment",
+        "Shelter",
+        "Safety"
+    ],
+    "Art": [
+        "Dreams",
+        "Hope",
+        "Inspiration"
+    ],
+    "Infected": [
+        "Death",
+        "Loss",
+        "Danger"
+    ],
+    "Day": [
+        "Safety",
+        "Exploration",
+        "Light",
+        "Peace"
+    ],
+    "God": [
+        "Hope",
+        "Light",
+        "Religion"
+    ],
+    "War": [
+        "Death",
+        "Loss",
+        "Heroism"
+    ],
+    "Peace": [
+        "Safety",
+        "Family",
+        "Hope"
+    ],
+    "Spirituality": [
+        "Hope",
+        "Light",
+        "Safety",
+        "Infinity"
+    ],
+    "Salvage": [
+        "Technology",
+        "Exploration",
+        "Science",
+        "Crafts"
+    ],
+    "Technology": [
+        "Science",
+        "Knowledge",
+        "Shelter"
+    ],
+    "Relationships": [
+        "Love",
+        "Loss",
+        "Family"
+    ],
+    "Loss": [
+        "Death",
+        "Theft",
+        "The Unknown"
+    ],
+    "Inspiration": [
+        "Star",
+        "Dreams",
+        "Art",
+        "Loss",
+        "Creation"
+    ],
+    "Entertainment": [
+        "Shelter",
+        "Safety",
+        "Peace"
+    ],
+    "Shelter": [
+        "Safety",
+        "Night",
+        "Peace"
+    ],
+    "Safety": [
+        "Hope",
+        "Shelter",
+        "Friendship"
+    ],
+    "Dreams": [
+        "Night",
+        "Star",
+        "Loss",
+        "Relationships",
+        "Hope"
+    ],
+    "Death": [
+        "Danger",
+        "Infected",
+        "Loss"
+    ],
+    "Danger": [
+        "Theft",
+        "Infected",
+        "War",
+        "Night",
+        "Raiders",
+        "The Unknown"
+    ],
+    "Exploration": [
+        "Salvage",
+        "Light",
+        "Knowledge",
+        "Research",
+        "Travel"
+    ],
+    "Light": [
+        "Safety",
+        "Salvage",
+        "Star",
+        "Day"
+    ],
+    "Heroism": [
+        "Salvage",
+        "Combat",
+        "Defense",
+        "Protection",
+        "Exploration"
+    ],
+    "Crafts": [
+        "Technology",
+        "Entertainment",
+        "Creation",
+        "Weapons",
+        "Art"
+    ],
+    "Knowledge": [
+        "Technology",
+        "Research",
+        "Exploration"
+    ],
+    "Theft": [
+        "Loss",
+        "Raiders",
+        "Supplies"
+    ],
+    "The Unknown": [
+        "Danger",
+        "Infected",
+        "Space",
+        "Exploration",
+        "Research"
+    ],
+    "Creation": [
+        "Crafts",
+        "Inspiration",
+        "Hope",
+        "Technology"
+    ],
+    "Friendship": [
+        "Relationships",
+        "Hope",
+        "Safety"
+    ],
+    "Raiders": [
+        "Theft",
+        "Combat",
+        "Weapons"
+    ],
+    "Research": [
+        "Technology",
+        "Science",
+        "Hope"
+    ],
+    "Travel": [
+        "The Unknown",
+        "Supplies"
+    ],
+    "Combat": [
+        "Danger",
+        "Death",
+        "Defense",
+        "Weapons"
+    ],
+    "Defense": [
+        "Shelter",
+        "Safety",
+        "Weapons"
+    ],
+    "Protection": [
+        "Safety",
+        "Shelter",
+        "Heroism",
+        "Relationships",
+        "Love"
+    ],
+    "Weapons": [
+        "Death",
+        "Combat",
+        "War",
+        "Art"
+    ],
+    "Supplies": [
+        "Food",
+        "Safety",
+        "Theft",
+        "Salvage",
+        "Crafts"
+    ],
+    "Food": [
+        "Hope",
+        "Shelter"
     ]
 }
