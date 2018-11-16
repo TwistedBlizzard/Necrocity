@@ -86,10 +86,13 @@ def edit(race, associations):
                 break
         while True:
             print('Please enter a word to add to associations:')
-            print("Enter 'next' to go to the next word.")
             print("Enter 'stop' to stop editing.")
             root = input()
-            if root not in associations:
+            if root == '':
+                continue
+            elif root == 'stop':
+                raise Stop()
+            elif root not in associations:
                 associations[root] = []
             else:
                 continue
