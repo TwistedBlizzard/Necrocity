@@ -73,7 +73,7 @@ class Conversation:
     def get_next_speaker(self):
         participants = []
         for participant in self.participants:
-            if participant = current_speaker:
+            if participant == current_speaker:
                 continue
             elif participant.wants_to_converse:
                 if self.topic in participant.associations:
