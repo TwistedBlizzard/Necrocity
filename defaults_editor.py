@@ -25,7 +25,7 @@ def edit(race, associations):
     print('Editing Associations for', race)
     try:
         for root in associations:
-            print('Please enter words relating to the word %s:' % (root))
+            print('Please enter words relating to the word %s:' % (str(root)))
             print("Enter 'next' to go to the next word.")
             print("Enter 'skip' to skip to words that have no associations.")
             print("Enter 'stop' to stop editing.")
@@ -112,4 +112,4 @@ def edit(race, associations):
 
 if __name__ == '__main__':
     associations = load('Human')
-    associations = edit(associations)
+    edit('Human', associations)
