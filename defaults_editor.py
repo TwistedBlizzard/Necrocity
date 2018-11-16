@@ -19,9 +19,10 @@ def load(race):
 def save(race, data):
     path = str(os.path.join('res', race.lower() + '_associations.json'))
     with open(path, 'w') as json_file:
-        json.dump(data, json_file)
+        json.dump(data, json_file, indent=4)
 
-def edit(associations):
+def edit(race, associations):
+    print('Editing Associations for', race)
     try:
         for root in associations:
             print('Please enter words relating to the word %s:' % (root))
@@ -48,6 +49,7 @@ def edit(associations):
                         raise Stop()
                     else:
                         associations[root].append(association)
+                        save(race, associations)
             except Next:
                 continue
             except Skip:
@@ -77,6 +79,7 @@ def edit(associations):
                         raise Stop()
                     else:
                         associations[root].append(association)
+                        save(race, associations)
             except Next:
                 continue
             except Skip:
@@ -101,13 +104,12 @@ def edit(associations):
                         raise Stop()
                     else:
                         associations[root].append(association)
+                        save(race, associations)
             except Next:
                 continue
     except Stop:
         pass
-    return associations
 
 if __name__ == '__main__':
     associations = load('Human')
     associations = edit(associations)
-    save('Human', associations)
