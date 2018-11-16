@@ -1,4 +1,4 @@
-import os, json
+import os, json, time
 import random as rand
 
 class ConversationTools:
@@ -39,7 +39,7 @@ class ConversationTools:
         self.associations[association] += self.current_topics()
     def get_association(self, root):
         if root in self.associations and len(self.associations[root]) > 0:
-            return random.choice(self.associations[root])
+            return rand.choice(self.associations[root])
         else:
             return None
     def get_topic(self, partners):
@@ -56,11 +56,11 @@ class ConversationTools:
         return topic
 
 class Conversation:
-    def __init__(self, *participants):
+    def __init__(self, participants):
         self.topic = None
         self.participants = participants
         self.recent_topics = []
-        current_speaker = None
+        self.current_speaker = None
     def start_conversation(self):
         pool = []
         for participant in self.participants:
@@ -68,25 +68,34 @@ class Conversation:
                 for i in range(participant.social):
                     pool.append(participant)
         ice_breaker = rand.choice(pool)
-        current_speaker = ice_breaker
-        self.topic = ice_breaker.get_topic()
+        self.current_speaker = ice_breaker
+        self.topic = ice_breaker.get_topic(self.participants)
     def get_next_speaker(self):
         participants = []
         for participant in self.participants:
-            if participant == current_speaker:
+            if participant == self.current_speaker:
                 continue
             elif participant.wants_to_converse:
+                print('  %s wants to talk.' % (participant.name))
                 if self.topic in participant.associations:
+                    print('  %s knows about %s.' % (participant.name, self.topic))
                     participants += [participant] * participant.social
-        if len_participants > 1:
-            return self.participants
-        else
+        if len(participants) < 1:
+            print('The conversation has died down.')
+            time.sleep(3)
+            next_speaker = rand.choice(self.participants)
+        else:
             next_speaker = rand.choice(participants)
-            return next_speaker
+        return next_speaker
     def converse(self):
         self.start_conversation()
         while True:
-            print(self.current_speaker.name + ':', self.topic)
+            print('%s starts talking about %s.' % (self.current_speaker.name, self.topic))
+            wait_time = 5
+            wait_time += rand.randrange(-3, 4)
+            wait_time /= 2
+            time.sleep(wait_time)
+            print(self.current_speaker.name, 'stopped talking.')
             self.current_speaker = self.get_next_speaker()
             self.topic = self.current_speaker.get_association(self.topic)
 
