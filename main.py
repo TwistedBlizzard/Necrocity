@@ -2,6 +2,7 @@ import os, json, time
 import random as rand
 from logger import Logger
 
+RES_DIR = 'res'
 LOG = True
 
 if LOG:
@@ -150,9 +151,25 @@ class Conversation:
         self.listeners.remove(speaker)
 
 if __name__ == '__main__':
-    barry = ConversationTools('Barry', race='Human')
-    fred = ConversationTools('Fred', race='Human')
-    tim = ConversationTools('Tim', race='Human')
-    conversation = Conversation([barry, fred, tim])
+    path = os.path.join(RES_DIR, 'male_names.json')
+    with open(path, 'r') as json_file:
+        male_names = json.load(json_file)
+    path = os.path.join(RES_DIR, 'female_names.json')
+    with open(path, 'r') as json_file:
+        female_names = json.load(json_file)
+    path = os.path.join(RES_DIR, 'last_names.json')
+    with open(path, 'r') as json_file:
+        last_names = json.load(json_file)
+    genders = ['male', 'female']
+    participants = []
+    for i in range(10):
+        gender = rand.choice(genders)
+        if gender == 'male':
+            name = rand.choice(male_names)
+        else:
+            name = rand.choice(female_names)
+        name += ' %s' % (rand.choice(last_names))
+        participants.append(ConversationTools(name, race='Human'))
+    conversation = Conversation(participants)
     while True:
         conversation.converse()
