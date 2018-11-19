@@ -117,7 +117,7 @@
         "Loss",
         "Danger",
         "Combat",
-        "Defense"
+        "Defence"
     ],
     "Day": [
         "Safety",
@@ -234,7 +234,7 @@
     "Heroism": [
         "Salvage",
         "Combat",
-        "Defense",
+        "Defence",
         "Protection",
         "Exploration"
     ],
@@ -279,7 +279,7 @@
         "Theft",
         "Combat",
         "Weapons",
-        "Defense"
+        "Defence"
     ],
     "Research": [
         "Technology",
@@ -293,10 +293,10 @@
     "Combat": [
         "Danger",
         "Death",
-        "Defense",
+        "Defence",
         "Weapons"
     ],
-    "Defense": [
+    "Defence": [
         "Shelter",
         "Safety",
         "Weapons"
@@ -313,7 +313,7 @@
         "Combat",
         "War",
         "Art",
-        "Defense"
+        "Defence"
     ],
     "Resources": [
         "Food",
