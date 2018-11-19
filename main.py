@@ -1,8 +1,19 @@
 import os, json, time
 import random as rand
+from logger import Logger
+
+LOG = True
+
+if LOG:
+    logger = Logger()
 
 class ConversationEnd(Exception):
-    print('The conversation is dying down...')
+    def __init__(self):
+        super().__init__(self)
+        info = 'The conversation is dying down...'
+        print(info)
+        logger.log(info)
+
 
 class ConversationTools:
     def __init__(self, name, associations=None, race=None):
@@ -19,10 +30,14 @@ class ConversationTools:
                         break
                     break
             except TypeError:
-                raise TypeError('Associations were parsed in the wrong format.')
+                info = 'Associations were parsed in the wrong format.'
+                raise TypeError(info)
+                logger.log('Error: ' + info)
             self.associations = associations
         elif race == None:
-            raise ValueError('If no associations are provided, a race type must be given.')
+            info = 'If no associations are provided, a race type must be given.'
+            raise ValueError(info)
+            logger.log('Error: ' + info)
         elif race == 'Human':
             path = os.path.join('res', 'human_associations.json')
             with open(path, 'r') as json_file:
@@ -44,7 +59,8 @@ class ConversationTools:
         path = self.name + '.json'
         with open(path, 'w') as json_file:
             json.dump(self.associations, json_file, indent=4)
-        print('  %s now associates %s with %s.' % (self.name, association, root))
+        info = '  %s now associates %s with %s.' % (self.name, association, root)
+        logger.log(info)
     def get_association(self, root, recent_topics=None):
         if root not in self.associations:
             return None
@@ -90,9 +106,9 @@ class Conversation:
         participants = []
         for listener in self.listeners:
             if listener.wants_to_converse:
-                # print('  %s wants to talk.' % (listener.name))
+                logger.log('    %s wants to talk.' % (listener.name))
                 if self.topic in listener.associations:
-                    # print('  %s knows about %s.' % (listener.name, self.topic))
+                    logger.log('    %s knows about %s.' % (listener.name, self.topic))
                     participants += [listener] * listener.social
         if len(participants) > 0:
             self.pause(5)
@@ -100,7 +116,7 @@ class Conversation:
         else:
             raise ConversationEnd()
         topic = speaker.get_association(self.topic, self.recent_topics)
-        print('  %s associates %s with %s.' % (speaker.name, topic, self.topic))
+        logger.log('  %s associates %s with %s.' % (speaker.name, topic, self.topic))
         if topic == None:
             raise ConversationEnd()
         self.set_topic(speaker, topic)
@@ -108,14 +124,15 @@ class Conversation:
         try:
             self.start_conversation()
             while True:
-                print('%s starts talking about %s.' % (self.speaker.name, self.topic))
+                info = '%s starts talking about %s.' % (self.speaker.name, self.topic)
+                print(info)
+                logger.log(info)
                 for listener in self.listeners:
                     if self.speaker.name not in listener.associations:
                         listener.add_association(self.speaker.name, self.topic)
                     elif self.topic not in listener.associations[self.speaker.name]:
                         listener.add_association(self.speaker.name, self.topic)
                 self.pause(5)
-                # print(self.speaker.name, 'stopped talking.')
                 self.progress_conversation()
         except ConversationEnd:
             self.pause(10)
