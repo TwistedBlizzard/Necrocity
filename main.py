@@ -57,11 +57,9 @@ class ConversationTools:
             if association not in self.associations:
                 self.associations[association] = []
             self.associations[association] += [root, root]
-        path = self.name + '.json'
-        with open(path, 'w') as json_file:
-            json.dump(self.associations, json_file, indent=4)
         info = '  %s now associates %s with %s.' % (self.name, association, root)
         logger.log(info)
+        logger.save(self.name, self.associations)
     def get_association(self, root, recent_topics=None):
         if root not in self.associations:
             return None
