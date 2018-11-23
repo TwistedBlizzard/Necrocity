@@ -48,15 +48,15 @@ class ConversationTools:
         self.topics = []
         for root in self.associations:
             self.topics.append(root)
-    def add_association(self, root, association):
-        if root != self.name:
+    def add_association(self, root, association, reverse=True):
+        if self.name not in [root, association]:
             if root not in self.associations:
                 self.associations[root] = []
             self.associations[root].append(association)
-        if association != self.name:
-            if association not in self.associations:
-                self.associations[association] = []
-            self.associations[association] += [root, root]
+            if reverse:
+                if association not in self.associations:
+                    self.associations[association] = []
+                self.associations[association].append(root)
         info = '  %s now associates %s with %s.' % (self.name, association, root)
         logger.log(info)
         logger.save(self.name, self.associations)
@@ -127,10 +127,13 @@ class Conversation:
                 print(info)
                 logger.log(info)
                 for listener in self.listeners:
+                    reverse = rand.choice([True] + [False] * 5)
                     if self.speaker.name not in listener.associations:
-                        listener.add_association(self.speaker.name, self.topic)
+                        logger.log('    %s has just heard %s talk for the first time.' % (listener.name, self.speaker.name))
+                        listener.add_association(self.speaker.name, self.topic, reverse=reverse)
                     elif self.topic not in listener.associations[self.speaker.name]:
-                        listener.add_association(self.speaker.name, self.topic)
+                        logger.log('    %s has just heard %s talk about %s for the first time.' % (listener.name, self.speaker.name, self.topic))
+                        listener.add_association(self.speaker.name, self.topic, reverse=reverse)
                 self.pause(5)
                 self.progress_conversation()
         except ConversationEnd:
