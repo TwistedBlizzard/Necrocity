@@ -2,7 +2,7 @@ import os, json, time
 import random as rand
 from logger import Logger
 
-RES_DIR = 'res'
+RES_DIR = os.path.join('res', 'humans')
 LOG = True
 
 if LOG:
@@ -40,7 +40,7 @@ class ConversationTools:
             raise ValueError(info)
             logger.log('Error: ' + info)
         elif race == 'Human':
-            path = os.path.join('res', 'human_associations.json')
+            path = os.path.join(RES_DIR, 'associations.json')
             with open(path, 'r') as json_file:
                 self.associations = json.load(json_file)
         else:
