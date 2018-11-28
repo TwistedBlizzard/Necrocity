@@ -59,7 +59,5 @@ target/
 
 # Custom
 venv/
-buildings/
-humans/
 .DS_Store
 logs/
