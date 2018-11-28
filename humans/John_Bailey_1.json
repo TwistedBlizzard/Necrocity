@@ -1,0 +1,45 @@
+{
+    "gender": "male",
+    "name": [
+        "John",
+        "Bailey"
+    ],
+    "stats": {
+        "str": 11,
+        "con": 4,
+        "def": 13,
+        "dex": 3,
+        "int": 3,
+        "cha": 10,
+        "wis": 8,
+        "wil": 6,
+        "per": 12,
+        "luck": 5
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 55,
+            "heavy_melee": 89,
+            "marksmanship": 66,
+            "shield": 76,
+            "dodge": 33,
+            "flex": 46
+        },
+        "social": {
+            "haggling": 85,
+            "persuasion": 77,
+            "intimidation": 70,
+            "charm": 74,
+            "insight": 68
+        },
+        "survival": {
+            "scavenging": 81,
+            "sleight_of_hand": 39,
+            "resistance": 43,
+            "cooking": 60,
+            "hauling": 81,
+            "stamina": 74
+        }
+    },
+    "unique_id": "John_Bailey_1"
+}

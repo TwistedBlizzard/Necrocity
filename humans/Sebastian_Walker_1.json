@@ -1,0 +1,45 @@
+{
+    "gender": "male",
+    "name": [
+        "Sebastian",
+        "Walker"
+    ],
+    "stats": {
+        "str": 4,
+        "con": 11,
+        "def": 8,
+        "dex": 0,
+        "int": 10,
+        "cha": 6,
+        "wis": 9,
+        "wil": 9,
+        "per": 13,
+        "luck": 5
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 35,
+            "heavy_melee": 61,
+            "marksmanship": 72,
+            "shield": 98,
+            "dodge": 33,
+            "flex": 58
+        },
+        "social": {
+            "haggling": 57,
+            "persuasion": 75,
+            "intimidation": 80,
+            "charm": 71,
+            "insight": 102
+        },
+        "survival": {
+            "scavenging": 100,
+            "sleight_of_hand": 27,
+            "resistance": 102,
+            "cooking": 54,
+            "hauling": 69,
+            "stamina": 82
+        }
+    },
+    "unique_id": "Sebastian_Walker_1"
+}

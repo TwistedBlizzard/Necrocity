@@ -1,0 +1,45 @@
+{
+    "gender": "female",
+    "name": [
+        "Zara",
+        "Cooper"
+    ],
+    "stats": {
+        "str": 9,
+        "con": 6,
+        "def": 10,
+        "dex": 4,
+        "int": 0,
+        "cha": 0,
+        "wis": 3,
+        "wil": 18,
+        "per": 14,
+        "luck": 11
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 92,
+            "heavy_melee": 81,
+            "marksmanship": 72,
+            "shield": 76,
+            "dodge": 46,
+            "flex": 73
+        },
+        "social": {
+            "haggling": 33,
+            "persuasion": 3,
+            "intimidation": 42,
+            "charm": 11,
+            "insight": 40
+        },
+        "survival": {
+            "scavenging": 103,
+            "sleight_of_hand": 82,
+            "resistance": 77,
+            "cooking": 34,
+            "hauling": 111,
+            "stamina": 97
+        }
+    },
+    "unique_id": "Zara_Cooper_1"
+}

@@ -1,0 +1,45 @@
+{
+    "gender": "female",
+    "name": [
+        "Alisha",
+        "Adams"
+    ],
+    "stats": {
+        "str": 6,
+        "con": 11,
+        "def": 6,
+        "dex": 15,
+        "int": 1,
+        "cha": 8,
+        "wis": 6,
+        "wil": 3,
+        "per": 17,
+        "luck": 4
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 96,
+            "heavy_melee": 75,
+            "marksmanship": 130,
+            "shield": 90,
+            "dodge": 138,
+            "flex": 57
+        },
+        "social": {
+            "haggling": 68,
+            "persuasion": 57,
+            "intimidation": 50,
+            "charm": 55,
+            "insight": 62
+        },
+        "survival": {
+            "scavenging": 99,
+            "sleight_of_hand": 114,
+            "resistance": 95,
+            "cooking": 96,
+            "hauling": 61,
+            "stamina": 74
+        }
+    },
+    "unique_id": "Alisha_Adams_1"
+}

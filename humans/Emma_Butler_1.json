@@ -1,0 +1,45 @@
+{
+    "gender": "female",
+    "name": [
+        "Emma",
+        "Butler"
+    ],
+    "stats": {
+        "str": 6,
+        "con": 2,
+        "def": 8,
+        "dex": 18,
+        "int": 7,
+        "cha": 10,
+        "wis": 8,
+        "wil": 12,
+        "per": 1,
+        "luck": 3
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 138,
+            "heavy_melee": 48,
+            "marksmanship": 90,
+            "shield": 44,
+            "dodge": 132,
+            "flex": 82
+        },
+        "social": {
+            "haggling": 79,
+            "persuasion": 89,
+            "intimidation": 65,
+            "charm": 84,
+            "insight": 62
+        },
+        "survival": {
+            "scavenging": 28,
+            "sleight_of_hand": 162,
+            "resistance": 31,
+            "cooking": 120,
+            "hauling": 70,
+            "stamina": 58
+        }
+    },
+    "unique_id": "Emma_Butler_1"
+}

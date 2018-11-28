@@ -1,0 +1,45 @@
+{
+    "gender": "female",
+    "name": [
+        "Lilly",
+        "Richards"
+    ],
+    "stats": {
+        "str": 7,
+        "con": 14,
+        "def": 6,
+        "dex": 9,
+        "int": 0,
+        "cha": 8,
+        "wis": 9,
+        "wil": 3,
+        "per": 12,
+        "luck": 7
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 68,
+            "heavy_melee": 91,
+            "marksmanship": 84,
+            "shield": 108,
+            "dodge": 105,
+            "flex": 58
+        },
+        "social": {
+            "haggling": 77,
+            "persuasion": 57,
+            "intimidation": 62,
+            "charm": 55,
+            "insight": 60
+        },
+        "survival": {
+            "scavenging": 81,
+            "sleight_of_hand": 72,
+            "resistance": 122,
+            "cooking": 90,
+            "hauling": 72,
+            "stamina": 89
+        }
+    },
+    "unique_id": "Lilly_Richards_1"
+}

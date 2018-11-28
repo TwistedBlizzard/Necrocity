@@ -1,0 +1,45 @@
+{
+    "gender": "female",
+    "name": [
+        "Chloe",
+        "Parker"
+    ],
+    "stats": {
+        "str": 13,
+        "con": 11,
+        "def": 12,
+        "dex": 5,
+        "int": 1,
+        "cha": 4,
+        "wis": 8,
+        "wil": 4,
+        "per": 8,
+        "luck": 9
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 63,
+            "heavy_melee": 124,
+            "marksmanship": 54,
+            "shield": 114,
+            "dodge": 68,
+            "flex": 60
+        },
+        "social": {
+            "haggling": 55,
+            "persuasion": 35,
+            "intimidation": 77,
+            "charm": 36,
+            "insight": 52
+        },
+        "survival": {
+            "scavenging": 69,
+            "sleight_of_hand": 47,
+            "resistance": 101,
+            "cooking": 68,
+            "hauling": 99,
+            "stamina": 103
+        }
+    },
+    "unique_id": "Chloe_Parker_1"
+}

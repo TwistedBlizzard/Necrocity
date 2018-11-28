@@ -1,0 +1,45 @@
+{
+    "gender": "female",
+    "name": [
+        "Madeleine",
+        "Watson"
+    ],
+    "stats": {
+        "str": 1,
+        "con": 7,
+        "def": 14,
+        "dex": 11,
+        "int": 1,
+        "cha": 12,
+        "wis": 3,
+        "wil": 6,
+        "per": 11,
+        "luck": 9
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 75,
+            "heavy_melee": 28,
+            "marksmanship": 90,
+            "shield": 98,
+            "dodge": 98,
+            "flex": 69
+        },
+        "social": {
+            "haggling": 111,
+            "persuasion": 78,
+            "intimidation": 22,
+            "charm": 84,
+            "insight": 38
+        },
+        "survival": {
+            "scavenging": 84,
+            "sleight_of_hand": 95,
+            "resistance": 71,
+            "cooking": 62,
+            "hauling": 37,
+            "stamina": 57
+        }
+    },
+    "unique_id": "Madeleine_Watson_1"
+}

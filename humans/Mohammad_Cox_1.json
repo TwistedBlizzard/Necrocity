@@ -1,0 +1,45 @@
+{
+    "gender": "male",
+    "name": [
+        "Mohammad",
+        "Cox"
+    ],
+    "stats": {
+        "str": 15,
+        "con": 1,
+        "def": 6,
+        "dex": 16,
+        "int": 5,
+        "cha": 10,
+        "wis": 8,
+        "wil": 6,
+        "per": 2,
+        "luck": 6
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 128,
+            "heavy_melee": 108,
+            "marksmanship": 82,
+            "shield": 30,
+            "dodge": 115,
+            "flex": 80
+        },
+        "social": {
+            "haggling": 88,
+            "persuasion": 83,
+            "intimidation": 85,
+            "charm": 81,
+            "insight": 56
+        },
+        "survival": {
+            "scavenging": 38,
+            "sleight_of_hand": 130,
+            "resistance": 20,
+            "cooking": 112,
+            "hauling": 95,
+            "stamina": 67
+        }
+    },
+    "unique_id": "Mohammad_Cox_1"
+}

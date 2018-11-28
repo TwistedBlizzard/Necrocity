@@ -1,0 +1,45 @@
+{
+    "gender": "female",
+    "name": [
+        "Katie",
+        "Hunter"
+    ],
+    "stats": {
+        "str": 8,
+        "con": 9,
+        "def": 9,
+        "dex": 5,
+        "int": 6,
+        "cha": 2,
+        "wis": 7,
+        "wil": 7,
+        "per": 5,
+        "luck": 18
+    },
+    "skills": {
+        "combat": {
+            "light_melee": 62,
+            "heavy_melee": 83,
+            "marksmanship": 52,
+            "shield": 90,
+            "dodge": 62,
+            "flex": 108
+        },
+        "social": {
+            "haggling": 68,
+            "persuasion": 37,
+            "intimidation": 72,
+            "charm": 48,
+            "insight": 62
+        },
+        "survival": {
+            "scavenging": 91,
+            "sleight_of_hand": 56,
+            "resistance": 97,
+            "cooking": 62,
+            "hauling": 79,
+            "stamina": 83
+        }
+    },
+    "unique_id": "Katie_Hunter_1"
+}
