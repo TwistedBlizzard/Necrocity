@@ -15,8 +15,7 @@
         "Galaxies",
         "Aliens",
         "Infinity",
-        "Conspiracies",
-        "Science"
+        "Conspiracies"
     ],
     "Hope": [
         "Love",
@@ -32,7 +31,8 @@
         "Infected",
         "Day",
         "The Unknown",
-        "Rest"
+        "Rest",
+        "The Supernatural"
     ],
     "Moon": [
         "Star",
@@ -68,11 +68,13 @@
     "Aliens": [
         "Space",
         "Science",
-        "Technology"
+        "Technology",
+        "Conspiracies"
     ],
     "Infinity": [
         "Space",
-        "Science"
+        "Science",
+        "Shelter"
     ],
     "Conspiracies": [
         "Aliens",
@@ -84,7 +86,8 @@
         "Hope",
         "Technology",
         "Research",
-        "Knowledge"
+        "Knowledge",
+        "Order"
     ],
     "Love": [
         "Family",
@@ -171,7 +174,8 @@
     "Loss": [
         "Death",
         "Theft",
-        "The Unknown"
+        "The Unknown",
+        "Sacrifice"
     ],
     "Inspiration": [
         "Star",
@@ -184,7 +188,9 @@
         "Shelter",
         "Safety",
         "Peace",
-        "Music"
+        "Music",
+        "Parties",
+        "Art"
     ],
     "Shelter": [
         "Safety",
@@ -196,7 +202,9 @@
         "Hope",
         "Shelter",
         "Friendship",
-        "Rest"
+        "Rest",
+        "Law",
+        "Order"
     ],
     "Dreams": [
         "Night",
@@ -273,13 +281,15 @@
     "Friendship": [
         "Relationships",
         "Hope",
-        "Safety"
+        "Safety",
+        "Parties"
     ],
     "Raiders": [
         "Theft",
         "Combat",
         "Weapons",
-        "Defence"
+        "Defence",
+        "Law"
     ],
     "Research": [
         "Technology",
@@ -306,7 +316,8 @@
         "Shelter",
         "Heroism",
         "Relationships",
-        "Love"
+        "Love",
+        "Law"
     ],
     "Weapons": [
         "Death",
@@ -339,5 +350,41 @@
     ],
     "Damage": [
         "Combat"
+    ],
+    "Law": [
+        "Protection",
+        "Shelter",
+        "Order",
+        "Order"
+    ],
+    "Parties": [
+        "Entertainment",
+        "Hope",
+        "Shelter"
+    ],
+    "Order": [
+        "Law",
+        "Safety"
+    ],
+    "The Supernatural": [
+        "Ghosts",
+        "Chaos",
+        "Death",
+        "Conspiracies"
+    ],
+    "Ghosts": [
+        "Night",
+        "Death",
+        "Loss"
+    ],
+    "Chaos": [
+        "Infected",
+        "The Unknown",
+        "The Supernatural"
+    ],
+    "Sacrifice": [
+        "Heroism",
+        "Protection",
+        "Loss"
     ]
 }
